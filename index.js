@@ -2,10 +2,11 @@
 
 function findMatching(drivers, queryString) {
   let matchedDrivers = drivers.filter(d => {
-    return d === queryString;
+    return d.toLowerCase() === queryString.toLowerCase;
   });
   return matchedDrivers;
 }
+
 
 function fuzzyMatch(drivers, stringQuery) {
   let lowercaseStringQuery = stringQuery.toLowerCase();
