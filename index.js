@@ -10,8 +10,7 @@ function fuzzyMatch(source, testString) {
     possibleMatch.toLowerCase().indexOf(testString.toLowerCase()) === 0
   )
 }
-
 function matchName(drivers, string) {
-  
+  return drivers.filter(driver => driver.name === string)
 }
 
