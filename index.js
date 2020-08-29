@@ -1,10 +1,10 @@
 // Code your solution here
 
-function findMatching(drivers, string) {
-  let string = string.toLowerCase();
+function findMatching(drivers, queryString) {
+  let queryString = string.toLowerCase();
   let drivers = drivers.toLowerCase();
   let matchedDrivers = drivers.filter(d => {
-    return d === string;
+    return d === queryString;
   });
   return matchedDrivers;
 }
