@@ -9,4 +9,5 @@ function fuzzyMatch(driversArray, stringQuery) {
   return driversArray.filter(driver => {
     driver.toLowerCase().startsWith(stringQuery.toLowerCase());
   })
+  return driver;
 }
