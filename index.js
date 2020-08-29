@@ -5,9 +5,9 @@ function findMatching(driversArray, stringQuery) {
   )
 }
 
-function fuzzyMatch(driversArray, stringQuery) {
-  return driversArray.filter(driver => {
-    driver.toLowerCase().startsWith(stringQuery.toLowerCase());
-  })
-  return driver;
+function fuzzyMatch(source, testString) {
+  return source.filter( possibleMatch =>
+    possibleMatch.toLowerCase().indexOf(testString.toLowerCase()) === 0
+  )
 }
+
