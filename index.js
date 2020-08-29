@@ -8,9 +8,13 @@ function findMatching(drivers, string) {
 }
 
 function fuzzyMatch(drivers, stringQuery) {
-  let stringQuery = stringQuery.toLowerCase();
+  let lowercaseStringQuery = stringQuery.toLowerCase();
   let matchedDrivers = drivers.filter(d => {
-    if (d.startsW)
+    if (d.startsWith(lowercaseStringQuery)) {
+      return true;
+    } else {
+      return false;
+    }
   })
   
 }
