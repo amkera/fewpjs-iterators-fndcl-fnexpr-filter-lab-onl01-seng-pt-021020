@@ -16,5 +16,6 @@ function fuzzyMatch(drivers, stringQuery) {
       return false;
     }
   })
+  return matchedDrivers;
   
 }
