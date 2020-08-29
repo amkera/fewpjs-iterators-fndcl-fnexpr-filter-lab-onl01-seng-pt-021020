@@ -1,7 +1,7 @@
 // Code your solution here
 function findMatching(driversArray, stringQuery) {
   return driversArray.filter( possibleMatch =>
-    possibleMatch.toLowerCase() === sought.toLowerCase()
+    possibleMatch.toLowerCase() === stringQuery.toLowerCase()
   )
 }
 
