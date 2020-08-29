@@ -1,5 +1,5 @@
 // Code your solution here
-function findMatching(source, sought) {
+function findMatching(driversArray, stringQuery) {
   return source.filter( possibleMatch =>
     possibleMatch.toLowerCase() === sought.toLowerCase()
   )
