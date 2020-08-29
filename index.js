@@ -7,6 +7,10 @@ function findMatching(drivers, string) {
   return matchedDrivers;
 }
 
-function fuzzyMatch(drivers, string) {
+function fuzzyMatch(drivers, stringQuery) {
+  let stringQuery = stringQuery.toLowerCase();
+  let matchedDrivers = drivers.filter(d => {
+    if (d.startsW)
+  })
   
 }
